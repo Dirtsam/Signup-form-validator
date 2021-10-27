@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./Waimakariri\ 1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: min(90%, 500px);
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-80%, -40%);
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.title > span {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  display: block;
+  margin-top: 5px;
+  margin-left: 30px;
+  font-size: 12px;
+  color: #bbc8d4;
+}
+
+.title h1 {
+  color: #7252a4;
+  text-align: center;
+  font-size: 40px;
+}
+
+.title h1 span {
+  color: #fbbc04;
+}
+
+@media (max-width: 375px) {
+  .title > span {
+    font-size: 12px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+  }
+}
+
+.signup-container {
+  max-width: 150px;
+  margin: 10px 40px;
+  color: #f83d6ce5;
+}
+
+.signup-container div {
+  width: 40px;
+  border-bottom: 3px solid #f83d6ce5;
+  display: inline-block;
+}
+
+.content-wrapper > .link {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  border: 2px solid #bbc8d4;
+  text-decoration: none;
+  color: #bbc8d4;
+  border-radius: 4px;
+  padding: 0.8125rem;
+  font-size: 14px;
+}
+
+.link img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* form class */
+.form {
+  width: 65%;
+  margin: 20px auto;
+}
+
+input {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 2px solid #bbc8d4;
+}
+
+.form-control {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/* .form-control is a parent div > input */
+.form-control input:focus {
+  outline: 0;
+  border: 1px solid #333;
+}
+
+.form-control.success input {
+  border: 2px solid #7252a4;
+}
+
+.form-control.error input {
+  border: 2px solid #ed455d;
+}
+
+.form-control .small {
+  color: #ed455d;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+.form-control.error .small {
+  visibility: visible;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #ed455d;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 600px) {
+  .container {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  /* parent div > h1 */
+  .content-wrapper .pr-heading {
+    font-size: 2.875rem;
+  }
+
+  /* google link */
+  .link {
+    width: auto;
+  }
+
+  .form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 430px) {
+  .content-wrapper .pr-heading {
+    font-size: 2.25rem;
+  }
+}
